@@ -1,0 +1,12 @@
+Front
+
+[andres@andres-pc ~]$ cd Documents/proyecto-moron-cerca/frontend
+[andres@andres-pc frontend]$ npm run dev
+
+Back
+
+[andres@andres-pc ~]$ cd Documents/proyecto-moron-cerca
+[andres@andres-pc proyecto-moron-cerca]$ source venv/bin/activate
+(venv) [andres@andres-pc proyecto-moron-cerca]$ sudo systemctl start postgresql
+(venv) [andres@andres-pc proyecto-moron-cerca]$ python manage.py runserver
+
