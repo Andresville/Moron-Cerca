@@ -10,3 +10,4 @@ Back
 (venv) [andres@andres-pc proyecto-moron-cerca]$ sudo systemctl start postgresql
 (venv) [andres@andres-pc proyecto-moron-cerca]$ python manage.py runserver
 
+
