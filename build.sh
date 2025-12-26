@@ -2,8 +2,7 @@
 # exit on error
 set -o errexit
 
-# Instalar librerías del sistema para GeoDjango
-# Render permite instalar paquetes de apt-get mediante este comando
+# Instalar dependencias de Python
 pip install -r requirements.txt
 
 # Recolectar archivos estáticos
