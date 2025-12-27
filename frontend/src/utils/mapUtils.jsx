@@ -55,7 +55,9 @@ export function TrazadorRuta({ posicionUsuario, destino }) {
       addWaypoints: false,
       draggableWaypoints: false,
       fitSelectedRoutes: true,
-      show: false,
+      show: false,              // No mostrar por defecto
+      itineraryClassName: 'd-none', // Clase CSS para ocultar el contenedor
+      containerClassName: 'd-none', // Ocultar el contenedor raíz
       createMarker: () => null,
     }).addTo(map);
 

@@ -17,6 +17,12 @@ html, body, #root {
   background-color: #fff;
 }
 
+/* Ocultar el panel de instrucciones de Leaflet Routing Machine */
+.leaflet-routing-container, 
+.leaflet-routing-error {
+    display: none !important;
+}
+
 /* PC Y TABLET (md en adelante) */
 @media (min-width: 768px) {
   .sidebar-container {
