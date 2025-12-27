@@ -22,6 +22,8 @@ L.Icon.Default.mergeOptions({
   shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
 });
 
+const API_BASE_URL = "https://moron-backend.onrender.com";
+
 function App() {
   const [puntos, setPuntos] = useState([]);
   const [categorias, setCategorias] = useState([]);
@@ -44,8 +46,8 @@ function App() {
     const fetchData = async () => {
       try {
         const [resEst, resCat] = await Promise.all([
-          axios.get("/api/establecimientos/"),
-          axios.get("/api/categorias/"),
+          axios.get(`${API_BASE_URL}/api/establecimientos/`),
+          axios.get(`${API_BASE_URL}/api/categorias/`),
         ]);
         setPuntos(resEst.data);
         setFiltrados(resEst.data);
